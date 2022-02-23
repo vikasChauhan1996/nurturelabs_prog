@@ -149,7 +149,7 @@ const SectionComponent = () => {
       <Box style={{ display: "flex", justifyContent: "space-around" }}>
         {fee.map((items) => {
           return (
-            <Box className={classes.fee_box}>
+            <Box className={classes.fee_box} key={items.id} >
               <Box className={classes.avatar_box}>
                 <Avatar className={classes.avatar} />
                 <Typography

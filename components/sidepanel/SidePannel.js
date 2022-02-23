@@ -37,7 +37,7 @@ const SidePannel = () => {
       <List className={classes.btn}>
         {Data.map((items) => {
           return (
-            <ListItem>
+            <ListItem key={items.id} >
               <Button
                 className={classes.side_btn}
                 startIcon={
