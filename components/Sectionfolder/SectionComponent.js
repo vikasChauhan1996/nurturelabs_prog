@@ -149,7 +149,7 @@ const SectionComponent = () => {
       <Box style={{ display: "flex", justifyContent: "space-around" }}>
         {fee.map((items) => {
           return (
-            <Box className={classes.fee_box} key={items.id} >
+            <Box className={classes.fee_box} key={items.id}>
               <Box className={classes.avatar_box}>
                 <Avatar className={classes.avatar} />
                 <Typography
@@ -225,9 +225,9 @@ const SectionComponent = () => {
         </Box>
       </Box>
 
-      {userData.map((items) => {
+      {userData.map((items, index) => {
         return (
-          <Box className={classes.table_body}>
+          <Box className={classes.table_body} key={index}>
             <Box className={classes.avatar_table_body}>
               <Avatar style={{ marginRight: "10px" }}>
                 <img style={{ width: "inherit" }} src={items.img} />
